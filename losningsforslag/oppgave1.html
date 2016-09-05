@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 1 - buttons</title>
+    <style>
+      html {
+        font-size: 16px;
+      }
+
+      .btn {
+        color: #fff;
+        background: gray;
+        border: 1px solid gray;
+        padding: .5rem 1rem;
+        font-size: inherit;
+        position: relative;
+      }
+
+      .btn-primary {
+        background-color: #0275d8;
+        border-color: #0275d8;
+      }
+
+      .btn-secondary {
+        color: #373a3c;
+        background-color: #fff;
+        border-color: #ccc;
+      }
+      .btn-success {
+        background-color: #5cb85c;
+        border-color: #5cb85c;
+      }
+      .btn-warning {
+        background-color: #f0ad4e;
+        border-color: #f0ad4e;
+      }
+      .btn-danger {
+        background-color: #d9534f;
+        border-color: #d9534f;
+      }
+
+      .state-hover::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,.2);
+      }
+
+      .state-active {
+        border: 5px solid rgba(0,0,0,0.5);
+        padding: calc( .5rem - 4px) calc(1rem - 4px);
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Default</h1>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+
+    <h1>State hover</h1>
+    <button type="button" class="btn btn-primary state-hover">Primary</button>
+    <button type="button" class="btn btn-secondary state-hover">Secondary</button>
+    <button type="button" class="btn btn-success state-hover">Success</button>
+    <button type="button" class="btn btn-warning state-hover">Warning</button>
+    <button type="button" class="btn btn-danger state-hover">Danger</button>
+
+    <h1>State active</h1>
+    <button type="button" class="btn btn-primary state-active">Primary</button>
+    <button type="button" class="btn btn-secondary state-active">Secondary</button>
+    <button type="button" class="btn btn-success state-active">Success</button>
+    <button type="button" class="btn btn-warning state-active">Warning</button>
+    <button type="button" class="btn btn-danger state-active">Danger</button>
+
+    </div>
+  </body>
+</html>
