@@ -6,12 +6,13 @@
     <style>
       html {
         font-size: 16px;
+        font-family: 'Helvetica';
       }
 
       .btn {
         color: #fff;
         background: gray;
-        border: 1px solid gray;
+        border: 0.1rem solid gray;
         padding: .5rem 1rem;
         font-size: inherit;
         position: relative;
@@ -44,18 +45,12 @@
         content: '';
         position: absolute;
         display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        top: 0.1rem;
+        bottom: 0.1rem;
+        left: 0.1rem;
+        right: 0.1rem;
         background: rgba(0,0,0,.2);
       }
-
-      .state-active {
-        border: 5px solid rgba(0,0,0,0.5);
-        padding: calc( .5rem - 4px) calc(1rem - 4px);
-      }
-
 
     </style>
   </head>
@@ -73,14 +68,5 @@
     <button type="button" class="btn btn-success state-hover">Success</button>
     <button type="button" class="btn btn-warning state-hover">Warning</button>
     <button type="button" class="btn btn-danger state-hover">Danger</button>
-
-    <h1>State active</h1>
-    <button type="button" class="btn btn-primary state-active">Primary</button>
-    <button type="button" class="btn btn-secondary state-active">Secondary</button>
-    <button type="button" class="btn btn-success state-active">Success</button>
-    <button type="button" class="btn btn-warning state-active">Warning</button>
-    <button type="button" class="btn btn-danger state-active">Danger</button>
-
-    </div>
   </body>
 </html>
