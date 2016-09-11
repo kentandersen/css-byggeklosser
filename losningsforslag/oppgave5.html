@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 5 - meldinger</title>
+    <style>
+
+      html {
+        font-size: 16px;
+        font-family: 'Helvetica';
+      }
+
+      .alert {
+        position: relative;
+        padding: 1.5rem 1.5rem 1.5rem 4rem;
+        margin-bottom: 1rem;
+      }
+
+      .alert h3 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .alert p {
+        margin: 0.5rem 0 0 0;
+      }
+
+      .alert::before {
+        content: '';
+        height: 2rem;
+        width: 2.75rem;
+        position: absolute;
+        left: 1rem;
+        top: 1.2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      .alert-success {
+        background-color: #c9e3cf;
+        color: #555f61;
+      }
+
+      .alert-success::before {
+        background-image: url('https://www.gjensidige.no/_public/gjeff-docs/gfx/messages/alert_success.svg');
+      }
+
+      .alert-info {
+        background-color: #d7e5ed;
+        color: #5a6267;
+      }
+
+      .alert-info::before {
+        background-image: url('https://www.gjensidige.no/_public/gjeff-docs/gfx/messages/alert_info.svg');
+      }
+
+      .alert-warning {
+        background-color: #feeec0;
+        color: #5f6058;
+      }
+
+      .alert-warning::before {
+        background-image: url('https://www.gjensidige.no/_public/gjeff-docs/gfx/messages/alert_warning.svg');
+      }
+
+      .alert-danger {
+        background-color: #edcac4;
+        color: #5a5957;
+      }
+
+      .alert-danger::before {
+        background-image: url('https://www.gjensidige.no/_public/gjeff-docs/gfx/messages/alert_danger.svg');
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="alert alert-success">
+      <h3>Success!</h3>
+      <p>Glorious success message</p>
+    </div>
+
+    <div class="alert alert-info">
+      <h3>Info!</h3>
+    </div>
+
+    <div class="alert alert-warning">
+      <h3>Warning!</h3>
+    </div>
+
+    <div class="alert alert-danger">
+      <h3>Danger!</h3>
+    </div>
+  </body>
+</html>

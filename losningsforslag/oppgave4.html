@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 4 - faner</title>
+    <style>
+
+      html {
+        font-size: 16px;
+        font-family: 'Helvetica';
+      }
+
+      .tabs {
+        display: flex;
+        justify-content:flex-end;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        border-bottom: 0.1rem solid #ccc;
+      }
+
+      .tabs li {
+        border: 0.1rem solid #ccc;
+        border-bottom: 0;
+        margin: 0 0.5rem 0 0;
+      }
+
+      .tabs li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #333;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .tabs li.state-active{
+        border-color: #FD5158;
+        background: #FD5158;
+      }
+
+      .tabs li.state-active a {
+        color: #fff;
+      }
+
+      @media (max-width: 380px) {
+        .tabs,
+        .tabs li {
+          display: block;
+          margin: 0;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul class="tabs">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu 1</a></li>
+      <li class="state-active"><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+    </ul>
+  </body>
+</html>

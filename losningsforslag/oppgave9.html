@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 9 - radio / checkbox</title>
+    <style>
+      html {
+        font-size: 16px;
+        font-family: 'Helvetica';
+      }
+
+      fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+      }
+
+      legend {
+        margin-bottom: 0.5rem;
+      }
+
+      input[type='radio'],
+      input[type='checkbox'] {
+        position: absolute;
+        width: 0.1rem;
+        height: 0.1rem;
+        opacity: 0;
+      }
+
+      input[type='radio'] + label::before,
+      input[type='checkbox'] + label::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        border: 0.15rem solid #808080;
+        margin-right: 0.3rem;
+      }
+      input[type='checkbox'] + label,
+      input[type='radio'] + label {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+      }
+      input[type='radio'] + label::before  {
+        border-radius: 50%;
+      }
+
+      input[type='radio']:checked + label::before  {
+        content: '●';
+        line-height: 1.8rem;
+      }
+
+      input[type='checkbox']:checked + label::before  {
+        content: '✖'
+      }
+
+      @media (min-width: 380px) {
+        html {
+          font-size: 14px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <form class="form-inline">
+
+      <fieldset>
+        <legend>Choose gender</legend>
+        <input type="radio" id="gender-male" name="gender" />
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" name="gender" checked />
+        <label for="gender-female">Female</label>
+        <input type="radio" id="gender-none" name="gender" />
+        <label for="gender-none">none of the above</label>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Interested in</legend>
+        <input type="checkbox" id="interested-male" name="gender" />
+        <label for="interested-male">Male</label>
+        <input type="checkbox" id="interested-female" name="gender" checked />
+        <label for="interested-female">Female</label>
+        <input type="checkbox" id="interested-none" name="gender" />
+        <label for="interested-none">none of the above</label>
+      </fieldset>
+    </form>
+  </body>
+</html>

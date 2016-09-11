@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 3 - link liste</title>
+    <style>
+      html {
+        font-size: 16px;
+        font-family: 'Helvetica';
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        border-top: 0.1rem solid #ccc;
+      }
+
+      li:first-of-type {
+        border: 0;
+      }
+
+      li a {
+        position: relative;
+        display: block;
+        padding: 1rem;
+        color: #333;
+        text-decoration: none;
+      }
+
+      li a::after {
+        content: '▶';
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+      }
+
+       li.state-hover {
+         background: #fd5158;
+         border-color: #fd5158;
+       }
+
+       li.state-hover + li {
+         border-color: #fd5158;
+       }
+
+       li.state-hover a {
+         color: #fff;
+       }
+    </style>
+  </head>
+  <body>
+    <ul class="navigation-list">
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li class="state-hover"><a href="#">Link 5</a></li>
+      <li><a href="#">Link 6</a></li>
+      <li><a href="#">Link 7</a></li>
+      <li><a href="#">Link 8</a></li>
+      <li><a href="#">Link 9</a></li>
+    </ul>
+  </body>
+</html>
