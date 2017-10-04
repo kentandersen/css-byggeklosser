@@ -1,0 +1,63 @@
+html {
+  font-size: 16px;
+  font-family: 'Helvetica';
+}
+
+.btn {
+  color: #fff;
+  background: gray;
+  border: 0;
+  padding: .5rem 1rem;
+  font-size: inherit;
+  position: relative;
+}
+
+.btn:focus {
+  outline: none
+}
+
+.btn:active {
+  box-shadow: inset 0 0 0.75rem rgba(0,0,0,0.5);
+}
+
+.btn--primary {
+  background-color: #0275d8;
+}
+
+.btn--primary:hover {
+  background-color: #286090;
+}
+
+
+.btn--secondary {
+  color: #373a3c;
+  background-color: #efeded;
+}
+
+.btn--secondary:hover {
+  background-color: #ccc;
+}
+
+.btn--success {
+  background-color: #5cb85c;
+}
+
+.btn--success:hover {
+  background-color: #449d44;
+}
+
+.btn--warning {
+  background-color: #f0ad4e;
+}
+
+.btn--warning:hover {
+  background-color: #ec971f;
+}
+
+.btn--danger {
+  background-color: #d9534f;
+}
+
+.btn--danger:hover {
+  background-color: #c9302c;
+}

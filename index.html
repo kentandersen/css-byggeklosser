@@ -1,0 +1,3073 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>CSS byggeklosser</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/bekk/remark/master/dist/bekk.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="bekk-black">
+    <textarea id="source">
+
+class: front-page
+  # CSS byggeklosser
+  ## github.com/kentandersen/css-byggeklosser
+
+  <span class="today-date"></span>
+
+---
+class: cols two
+
+# margin - padding - line-height
+
+.col[
+```css
+  h1 {
+  }
+```
+]
+
+<div class="col">
+  <div class="example-marign-padding">
+    <h1>Du vil ikke tro hva som skjedde</h1>
+    <p>
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </p>
+  </div>
+</div>
+
+---
+class: cols two
+
+# margin - padding - line-height
+
+.col[
+```css
+  h1 {
+    margin-top: 2rem;
+  }
+```
+]
+
+<div class="col">
+  <div class="example-marign-padding">
+    <h1 style="margin-top:2rem">Du vil ikke tro hva som skjedde</h1>
+    <p>
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </p>
+  </div>
+</div>
+
+---
+class: cols two
+
+# margin - padding - line-height
+
+.col[
+```css
+  h1 {
+    margin-top: 2rem;
+    margin-button: 2rem;
+  }
+```
+]
+
+<div class="col">
+  <div class="example-marign-padding">
+    <h1 style="margin-top:2rem;margin-bottom:2rem;">Du vil ikke tro hva som skjedde</h1>
+    <p>
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </p>
+  </div>
+</div>
+
+---
+class: cols two
+
+# margin - padding - line-height
+
+.col[
+```css
+  h1 {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+```
+]
+
+<div class="col">
+  <div class="example-marign-padding">
+    <h1 style="padding-top:2rem;margin-bottom:2rem;">Du vil ikke tro hva som skjedde</h1>
+    <p>
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </p>
+  </div>
+</div>
+
+---
+class: cols two
+
+# margin - padding - line-height
+
+.col[
+```css
+  h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+```
+]
+
+<div class="col">
+  <div class="example-marign-padding">
+    <h1 style="padding-top:2rem;padding-bottom:2rem;">Du vil ikke tro hva som skjedde</h1>
+    <p>
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </p>
+  </div>
+</div>
+
+---
+class: cols two
+
+# margin - padding - line-height
+
+.col[
+```css
+  h1 {
+    line-height: 6.5rem;
+  }
+```
+]
+
+<div class="col">
+  <div class="example-marign-padding">
+    <h1 style="line-height: 6.5rem">Du vil ikke tro hva som skjedde</h1>
+    <p>
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </p>
+  </div>
+</div>
+
+---
+class: cols two
+
+# margin - padding - line-height
+
+.col[
+```css
+  h1 {
+    line-height: 6.5rem;
+  }
+```
+]
+
+<div class="col">
+  <div class="example-marign-padding">
+    <h1 style="line-height: 6.5rem">Du vil ikke tro hva som skjedde da vi brakk over to linjer</h1>
+    <p>
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </p>
+  </div>
+</div>
+
+---
+class: split
+#Oppgave 1
+
+
+##Nyttige ressurser
+
+<iframe src="losningsforslag/oppgave1/index.html" style="width: 50%; background:#fff"></iframe>
+
+---
+class: center middle
+#Strukturering
+
+
+---
+class: cols two
+
+#Strukturering
+
+
+<div class="col">
+  <div class="speech-bubble">
+    <div class="speech-bubble__arrow"></div>
+    Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+  </div>
+
+```html
+<div class="speech-bubble">
+  <div class="arrow"></div>
+  Det ble stille og neandertaleren viste...
+</div>
+```
+</div>
+
+---
+class: cols two
+
+#Strukturering
+
+
+<div class="col">
+  <div class="speech-bubble">
+    <div class="speech-bubble__arrow"></div>
+    Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+  </div>
+
+```html
+<div class="speech-bubble">
+  <div class="arrow"></div>
+  Det ble stille og neandertaleren viste...
+</div>
+```
+</div>
+
+.col[
+```css
+.speech-bubble {
+  position: relative;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #FD5158;
+  padding: 1rem;
+  color: #fff;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -1.95rem;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.0rem 2.5rem 0 0;
+  border-color: #fd5157 transparent transparent transparent;
+}
+
+```
+]
+
+---
+class: cols two
+
+#Strukturering
+
+<div class="col">
+  <div class="speech-bubble">
+    <div class="speech-bubble__arrow"></div>
+    Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+  </div>
+
+```html
+<div class="speech-bubble">
+  <div class="arrow"></div>
+  Det ble stille og neandertaleren viste...
+</div>
+```
+</div>
+
+.col[
+```css
+.speech-bubble {
+  position: relative;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #FD5158;
+  padding: 1rem;
+  color: #fff;
+}
+
+.speech-bubble .arrow {
+  position: absolute;
+  bottom: -1.95rem;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.0rem 2.5rem 0 0;
+  border-color: #fd5157 transparent transparent transparent;
+}
+
+```
+]
+---
+class: cols two
+
+#Strukturering
+
+<div class="col">
+  <div class="conversation">
+    <div class="speech-bubble">
+      <div class="speech-bubble__arrow"></div>
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </div>
+    <span style="font-size: 2rem">Se her</span>
+    <span class="icon icon--arrow icon--large"></span>
+  </div>
+
+
+```html
+<div class="conversation">
+  <div class="speech-bubble">
+    <div class="arrow"></div>
+    Det ble stille og neandertaleren viste...
+  </div>
+   Se her <span class="arrow"></span>
+</div>
+```
+</div>
+
+--
+
+.col[
+```css
+.conversation {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  color: #1A1A1A;
+  margin-bottom: 1rem;
+}
+
+.conversation .arrow {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("resources/arrow.png");
+}
+```
+
+```css
+.speech-bubble .arrow {
+  ...
+}
+
+```
+
+]
+
+---
+
+<div class="browser">
+  <div class="browser__title">Methodology / BEM</div>
+  <div class="browser__url">https://en.bem.info/methodology</div>
+  <iframe class="browser__content" src="https://en.bem.info/methodology"></iframe>
+</div>
+
+.source[https://en.bem.info/methodology]
+
+---
+class: cols two
+#Strukturering - BEM
+
+.col[
+```css
+/**
+ * The top-level ‘Block’ of a component.
+ */
+.modal {}
+
+/**
+ * An ‘Element’ that is a part of the
+ * larger Block.
+ */
+.modal__title {}
+
+/**
+ * A ‘Modifier’ of the Block.
+ */
+.modal--large {}
+```
+]
+
+.col[
+
+```html
+<div class="modal">
+
+  <h1 class="modal__title">
+    Sign into your account
+  </h1>
+
+  <div class="modal__content">
+    <form class="form-login">
+      ...
+    </form>
+  </div>
+
+</div>
+```
+]
+
+.source[https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/]
+
+---
+class: cols two
+#Strukturering - Block
+
+.col[
+
+```css
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  transform: translate(-50%,0);
+  width: 16rem;
+  padding: 2rem;
+  background-color: #fff;
+  color: #1A1A1A;
+}
+
+```
+]
+
+<div class="col">
+  <div class="modal modal--inline">
+
+  </div>
+
+```html
+<div class="modal">
+</div>
+```
+
+<div>
+
+---
+class: cols two
+#Strukturering - Element
+
+.col[
+
+```css
+.modal {
+  ...
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 0;
+  right: 0.75rem;
+  background: transparent;
+  border: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1A1A1A;
+}
+
+
+```
+]
+
+<div class="col">
+  <div class="modal modal--inline">
+    <button class="modal__close-btn">
+      &#215
+    </button>
+  </div>
+
+```html
+<div class="modal">
+  <button class="modal__close-btn">
+    &#215
+  </button>
+</div>
+```
+
+<div>
+
+---
+class: cols two
+#Strukturering - Element
+
+.col[
+
+```css
+.modal {
+  ...
+}
+
+.modal__close-btn {
+  ...
+}
+
+.modal__title {
+  font-size: 2rem;
+  text-transform: none;
+  text-align: left;
+  margin: 0;
+}
+
+
+```
+]
+
+<div class="col">
+  <div class="modal modal--inline">
+    <h1 class="modal__title">Du er kunde nummer</h1>
+    <button class="modal__close-btn">
+      &#215
+    </button>
+  </div>
+
+```html
+<div class="modal">
+  <h1 class="modal__title">Du er kunde nummer</h1>
+  <button class="modal__close-btn">
+    &#215
+  </button>
+</div>
+```
+
+<div>
+
+---
+
+<h2>Juledvergen luktet en sykkel</h2>
+<p>Det var en gang noen kaniner som klemte andre indianerer. En astronaut tok med seg femten båter inn til mafiabossen. Den fryktete gitaren traff båtene med ei ugle som jobbet bak en rask lydmodul. </p>
+<h2>Politiker mistet</h2>
+<p>En figur bar orken treffsikkert. Presten var rettferdig og hurtig. Plutselig så de sytten politikerer som kom ved ringpermen. Sabeltannhundene klappet mange rytterer. </p>
+<h2>Gorilla løftet</h2>
+<p>35 ørner bukket en kjent biff på fjorten dager. En kjempefjott spiste flygemaskinen til tyranosaurusene. De så en kamerat som hoppet hensynsløst på en slipemaskin. Da importerte neandertaleren en kreps elegant. 76 kroner måtte en sabeltanngiraff betale. </p>
+<h2>Robot traff</h2>
+<p>Flere sjefer tegnet da en ork som lurte en elefant bar en politiker litt bak kretsen. De små pyromanene brølte i skjul. Knappene ankom, mens vennene jobbet over stokken. Plutselig så de to neandertalerer som kom foran osten. Flere sabeltannkatter brølte da en dverg som flamberte en doktor malte en sebra over fiskebåten. En rytter kjøpte seg en varm brannbil. </p>
+
+--
+
+<div class="modal">
+  <h1 class="modal__title">Du er kunde nummer</h1>
+  <div class="modal__content">
+    <marquee>10 000</marquee><br>
+    <a href="#">Klikk her for å få ting</a>
+  </div>
+  <button class="modal__close-btn">
+    &#215
+  </button>
+</div>
+
+--
+
+<div class="modal modal--large">
+  <img src="resources/scam-ad.png" class="modal__content" />
+  <button class="modal__close-btn modal__close-btn--to-side">
+    &#215
+  </button>
+</div>
+
+---
+class: cols two
+
+#Strukturering - modifiers
+
+.col[
+
+```html
+<div class="modal">
+  <h1 class="modal__title">
+    Du er kunde nummer
+  </h1>
+  <div class="modal__content">
+    <marquee>10 000</marquee><br>
+    <a href="#">Klikk her for å få ting</a>
+  </div>
+  <button class="modal__close-btn">
+    &#215
+  </button>
+</div>
+```
+]
+
+.col[
+```css
+.modal {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  background: #fff;
+  width: 16rem;
+  padding: 2rem;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 0;
+  right: 0.75rem;
+  border: 0;
+  background: transparent;
+}
+```
+]
+
+---
+class: cols two
+
+#Strukturering - modifiers
+
+.col[
+
+```html
+<div class="modal-large">
+  <img src="resources/scam-ad.png" class="modal__content" />
+  <button class="modal--large__close-btn">
+    &#215
+  </button>
+</div>
+```
+]
+
+.col[
+
+```css
+.modal-large {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  background: #fff;
+
+
+
+}
+
+.modal-large__close-btn {
+  position: absolute;
+  top: 0;
+  right: -3.2rem;
+  border: 0;
+  background: #fff;
+  height: 3.2rem;
+  width: 3.2rem;
+}
+```
+]
+---
+class: cols two
+
+#Strukturering - modifiers
+
+.col[
+
+```css
+.modal {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  background: #fff;
+  width: 16rem;
+  padding: 2rem;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 0;
+  right: 0.75rem;
+  border: 0;
+  background: transparent;
+}
+```
+]
+
+.col[
+```css
+.modal--large {
+  width: auto;
+  padding: 0;
+}
+
+.modal__close-btn--to-side {
+  right: -3.2rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  background: #fff;
+  text-align: center;
+}
+```
+]
+---
+class: cols two
+#Background
+
+.col[
+```css
+.block {
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: left top;
+  background-size: auto;
+}
+```
+
+<div class="example-property-edit" data-target-selector=".example-background">
+  <select data-prop="background-color">
+    <option selected>transparent</option>
+    <option>#FD5158</option>
+    <option>#36BDB2</option>
+    <option>#FFF9AE</option>
+  </select>
+  <select data-prop="background-image">
+    <option selected>none</option>
+    <option>linear-gradient(45deg, #FFF9AE, #FD5158)</option>
+    <option>url('resources/bullet.svg')</option>
+  </select>
+  <select data-prop="background-repeat">
+    <option selected>repeat</option>
+    <option>repeat-x</option>
+    <option>repeat-y</option>
+    <option>no-repeat</option>
+  </select>
+  <select data-prop="background-position">
+    <option selected>left top</option>
+    <option>right top</option>
+    <option>right bottom</option>
+    <option>10px 40px</option>
+    <option>center</option>
+  </select>
+  <select data-prop="background-size">
+    <option selected>auto</option>
+    <option>contain</option>
+    <option>cover</option>
+  </select>
+</div>
+]
+
+<div class="col">
+  <div class="example-background">
+  </div>
+</div>
+
+---
+
+class: split
+#Oppgave 2
+
+##ikoner
+
+##Nyttige ressurser
+
+<iframe src="losningsforslag/oppgave2/index.html" style="width: 50%; background:#fff"></iframe>
+
+---
+class: center middle
+#Knapper
+
+---
+class: cols two
+#Knapper
+
+.col[
+```css
+button {
+  color: buttontext;
+  background-color: buttonface;
+  border: 2px outset buttonface;
+  padding: 2px 6px 3px;
+  font-size: 11px;
+}
+```
+
+<div class="example-property-edit" data-target-selector=".col button">
+  <select data-prop="color">
+    <option selected>buttontext</option>
+    <option>pink</option>
+    <option>#1A1A1A</option>
+    <option>#fff</option>
+  </select>
+  <select data-prop="background-color">
+    <option selected>buttonface</option>
+    <option>pink</option>
+    <option>#FFF</option>
+    <option>#FD5158</option>
+    <option>#36BDB2</option>
+    <option>#FFF9AE</option>
+  </select>
+  <select data-prop="border">
+    <option selected>2px outset buttonface</option>
+    <option>0</option>
+    <option>1px dashed pink</option>
+  </select>
+  <select data-prop="padding">
+    <option selected>2px 6px 3px</option>
+    <option>0.5em 1em</option>
+    <option>0.5rem 1rem</option>
+  </select>
+  <select data-prop="font-size">
+    <option selected>11px</option>
+    <option>1rem</option>
+    <option>3rem</option>
+    <option>6rem</option>
+  </select>
+</div>
+]
+
+<div class="col" style="text-align:center">
+  <button style="transform:scale(2); transform-origin:top">Knapp&nbsp;knapp</button>
+</div>
+
+---
+class: cols two
+
+#:pseudo-selectors
+.col[
+```css
+button {
+  background-color: #FD5158;
+}
+
+button:focus {
+  background-color: #36BDB2;
+}
+```
+]
+
+<div class="col" style="text-align:center">
+  <button class="example-hover">Hover me!</button>
+</div>
+
+---
+class: cols two
+
+#:pseudo-selectors
+.col[
+```css
+button {
+  background-color: #FD5158;
+}
+
+button:focus {
+  background-color: #36BDB2;
+}
+
+button:active {
+  background-color: #FFF9AE;
+  color: #1A1A1A;
+}
+```
+]
+
+<div class="col" style="text-align:center">
+  <button class="example-hover">Click me!</button>
+</div>
+
+
+
+---
+class: split
+#Oppgave 3
+
+##Knapper
+
+##Nyttige ressurser
+
+<iframe src="losningsforslag/oppgave3/index.html" style="width: 50%; background:#fff"></iframe>
+
+---
+class: center middle
+#Form elementer
+
+---
+
+
+class: split
+#Oppgave 4
+
+##Form
+
+##Nyttige ressurser
+
+<iframe src="losningsforslag/oppgave4/index.html" style="width: 50%; background:#fff"></iframe>
+
+---
+class: theme-atomic-design
+#Atomic design
+
+<img src="resources/atomic-design-overview.png" style="display:block;margin: 0 auto"/>
+
+.source[http://bradfrost.com/blog/post/atomic-web-design]
+
+---
+class: theme-atomic-design
+
+#Atomic design
+.source[http://bradfrost.com/blog/post/atomic-web-design]
+
+<img src="resources/atomic-design-atoms.png" style="position: absolute; top: 5rem; left: 5rem; width: 45%" />
+
+--
+
+<img src="resources/atomic-design-molecules.png" style="position: absolute; top: 5rem; right: 3rem; width: 45%" />
+
+
+</textarea>
+
+<!--
+
+class: cols two
+
+# CSS Box model
+
+.col[
+```css
+  div {
+    width: 250px;
+    height: 170px;
+    padding:40px;
+  }
+```
+##Bredde
+250 + 40 + 40 = **330**
+##Høyde
+170 + 40 + 40 = **250**
+]
+
+<div class="col">
+  <div class="box-sizing-example box-sizing-padding" style="
+    padding:40px;
+    width:250px;
+  ">
+    <div class="box-sizing-content" style="
+      width:250px;
+      height:170px;
+    ">
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </div>
+  </div>
+</div>
+
+
+---
+class: cols two
+
+# CSS Box model
+
+.col[
+```css
+  div {
+    width: 250px;
+    height: 170px;
+    padding:40px;
+    border: 10px;
+  }
+```
+##Bredde
+250 + 40 + 40 + 10 + 10 = **350**
+##Høyde
+170 + 40 + 40 + 10 + 10 = **270**
+]
+
+<div class="col">
+  <div class="box-sizing-example box-sizing-padding" style="
+    width:250px;
+    padding:40px;
+    border-width: 10px;
+  ">
+    <div class="box-sizing-content" style="
+      width:250px;
+      height:170px;
+    ">
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </div>
+  </div>
+</div>
+
+---
+class: cols two
+
+# CSS Box model
+
+.col[
+```css
+  div {
+    width: 250px;
+    height: 170px;
+    padding:40px;
+    border: 10px;
+    margin: 40px;
+  }
+```
+##Bredde
+250 + 40 + 40 + 10 + 10 = **350**
+##Høyde
+170 + 40 + 40 + 10 + 10 = **270**
+]
+
+<div class="col">
+  <div class="box-sizing-example box-sizing-margin" style="
+    width:350px;
+  ">
+
+    <div class="box-sizing-padding" style="
+      width:250px;
+      padding:40px;
+      border-width: 10px;
+    ">
+      <div class="box-sizing-content" style="
+        width:250px;
+        height:170px;
+      ">
+        Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+---
+
+class: cols two
+
+# CSS Box model
+
+.col[
+```css
+  div {
+    width: 250px;
+    height: auto;
+    padding:40px;
+    border: 10px;
+    margin: 40px;
+  }
+```
+##Bredde
+250 + 40 + 40 + 10 + 10 = **350**
+##Høyde
+180 + 40 + 40 + 10 + 10 = **280**
+]
+
+<div class="col">
+  <div class="box-sizing-example box-sizing-margin" style="
+    width:350px;
+  ">
+
+    <div class="box-sizing-padding" style="
+      width:250px;
+      padding:40px;
+      border-width: 10px;
+    ">
+      <div class="box-sizing-content" style="
+        width:250px;
+      ">
+        Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+      </div>
+    </div>
+  </div>
+</div>
+
+???
+Linjehøyden er 30px, 6*30 = 180
+
+---
+class: cols two
+
+# CSS Box model
+
+.col[
+```css
+  div {
+    width: 250px;
+    padding:40px;
+    border: 10px;
+    margin: 40px;
+  }
+```
+##Bredde
+250 + 40 + 40 + 10 + 10 = **350**
+##Høyde
+180 + 40 + 40 + 10 + 10 = **280**
+]
+
+<div class="col">
+  <div class="box-sizing-example box-sizing-margin" style="
+    width:350px;
+  ">
+
+    <div class="box-sizing-padding" style="
+      width:250px;
+      padding:40px;
+      border-width: 10px;
+    ">
+      <div class="box-sizing-content" style="
+        width:250px;
+      ">
+        Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+class: center middle
+
+![CSS box model](resources/box-model-border-box-cat.jpg)
+
+
+---
+class: cols two
+
+# CSS Box model
+
+.col[
+```css
+  div {
+    box-sizing: border-box;
+    width: 250px;
+  }
+```
+##Bredde
+**250**
+##Høyde
+**180**
+]
+
+<div class="col">
+  <div class="box-sizing-example box-sizing-content border-box" style="
+    width:250px;
+    color: #fff;
+  ">
+    Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+  </div>
+</div>
+
+???
+Har har vi ikke satt none høyde
+
+---
+class: cols two
+
+# CSS Box model
+
+.col[
+```css
+  div {
+    box-sizing: border-box;
+    width: 250px;
+    padding:40px;
+  }
+```
+##Bredde
+**250**
+##Høyde
+**350**
+]
+
+<div class="col">
+  <div class="box-sizing-example box-sizing-padding border-box" style="
+    padding:40px;
+    width:250px;
+  ">
+    <div class="box-sizing-content">
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </div>
+  </div>
+</div>
+
+
+---
+class: cols two
+
+# CSS Box model
+
+.col[
+```css
+  div {
+    box-sizing: border-box;
+    width: 250px;
+    padding:40px;
+    border: 10px;
+  }
+```
+##Bredde
+**250**
+##Høyde
+**460**
+]
+
+<div class="col">
+  <div class="box-sizing-example box-sizing-padding border-box" style="
+    width:250px;
+    padding:40px;
+    border-width: 10px;
+  ">
+    <div class="box-sizing-content">
+      Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+    </div>
+  </div>
+</div>
+
+---
+class: cols two
+
+# CSS Box model
+
+.col[
+```css
+  div {
+    box-sizing: border-box;
+    width: 250px;
+    padding:40px;
+    border: 10px;
+    margin: 40px;
+  }
+```
+##Bredde
+**250**
+##Høyde
+**460**
+]
+
+<div class="col">
+  <div class="box-sizing-example box-sizing-margin" style="
+    width:250px;
+  ">
+
+    <div class="box-sizing-padding border-box" style="
+      width:250px;
+      padding:40px;
+      border-width: 10px;
+    ">
+      <div class="box-sizing-content">
+        Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+class: cols two
+
+# CSS Box model
+
+<div class="col">
+  <div class="box-sizing-example box-sizing-margin" style="
+    width:350px;
+  ">
+
+    <div class="box-sizing-padding" style="
+      width:250px;
+      padding:40px;
+      border-width: 10px;
+    ">
+      <div class="box-sizing-content" style="
+        width:250px;
+      ">
+        Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="box-sizing-example box-sizing-margin" style="
+    width:250px;
+  ">
+
+    <div class="box-sizing-padding border-box border-box" style="
+      width:250px;
+      padding:40px;
+      border-width: 10px;
+    ">
+      <div class="box-sizing-content">
+        Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
+      </div>
+    </div>
+  </div>
+</div>
+
+???
+Her ser vi de to ved siden av hverandre
+
+---
+# CSS Box model
+
+```css
+  * {
+    box-sizing: border-box;
+  }
+```
+---
+
+class: center middle
+
+#Display
+
+---
+class: cols two
+
+#Display
+.col[
+## Ikke-semantiske
+
+```css
+  div {
+    display: block;
+  }
+```
+
+```css
+  span {
+    display: inline;
+  }
+```
+]
+
+.col[
+## Semantiske
+
+```css
+  b, big, i, small, tt,
+  abbr, acronym, cite, code, dfn, em, kbd,
+  strong, samp, time, var,a, bdo, br, img,
+  map, object, q, script, span, sub, sup,
+  button, input, label, select, textarea {
+    display: inline;
+  }
+```
+
+```css
+  address, article, aside, blockquote, canvas,
+  dd, div, dl, fieldset,figcaption, figure,
+  footer, form, h1, h2, h3, h4, h5, h6,
+  header, hgroup, hr, li, main, nav, noscript,
+  ol, output, p, pre, section, table, tfoot,
+  ul, video {
+    display: block;
+  }
+```
+]
+
+---
+#Display inline
+
+<div style="font-size: 2em;"
+  <span>span</span> <a href="">Anchor</a> <button style="font-size: 1em">Button</button> <time>time</time> <abbr>abbr</abbr> <strong>strong</strong>
+</div>
+
+---
+#Display block
+
+<div class="display-example">
+  <address >address</address><blockquote>blockquote</blockquote><figure>figure</figure><h2>h2</h2><main>main</main><nav>nav</nav>
+</div>
+
+
+---
+
+class: center middle
+
+#inline-block
+
+---
+class: cols two
+#inline-block
+
+.col[
+```css
+  span {
+    background: #FD5158;
+    color: #fff;
+  }
+```
+]
+
+<div class="col">
+  <h2>Alv hacket foran en parkeringsautomat</h2>
+
+  <p>Planeten kom eller drakk. En sabeltannkatt syklet bygningen hardt på en
+     <span style="
+      background: #FD5158;
+      color: #fff;
+    ">svart medisinball. En kjempefjott importerte lydmodulen</span>
+    til pøbelene. Skiene ankom, mens cowboyene filosoferte på slipemaskinen. Den blåe manualen traff medisinballene med en snekker som spillte ved en sort fiskebåt. En dvergpuddel tok så en kald kontrabass og kastet den på huleboeren. En høvding lempet en rev provoserende.
+  </p>
+</div>
+
+---
+class: cols two
+#inline-block
+
+.col[
+```css
+  span {
+    background: #FD5158;
+    color: #fff;
+    padding: 10px;
+  }
+```
+]
+
+<div class="col">
+  <h2>Alv hacket foran en parkeringsautomat</h2>
+
+  <p>Planeten kom eller drakk. En sabeltannkatt syklet bygningen hardt på en
+    <span style="
+      background: #FD5158;
+      color: #fff;
+      padding: 10px">svart medisinball. En kjempefjott importerte lydmodulen</span>
+      til pøbelene. Skiene ankom, mens cowboyene filosoferte på slipemaskinen. Den blåe manualen traff medisinballene med en snekker som spillte ved en sort fiskebåt. En dvergpuddel tok så en kald kontrabass og kastet den på huleboeren. En høvding lempet en rev provoserende.
+    </p>
+</div>
+
+---
+class: cols two
+#inline-block
+
+.col[
+```css
+  span {
+    background: #FD5158;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+  }
+```
+]
+
+<div class="col">
+  <h2>Alv hacket foran en parkeringsautomat</h2>
+
+  <p>Planeten kom eller drakk. En sabeltannkatt syklet bygningen hardt på en
+    <span style="
+      background: #FD5158;
+      color: #fff;
+      padding: 10px;
+      margin: 10px;">svart medisinball. En kjempefjott importerte lydmodulen</span>
+      til pøbelene. Skiene ankom, mens cowboyene filosoferte på slipemaskinen. Den blåe manualen traff medisinballene med en snekker som spillte ved en sort fiskebåt. En dvergpuddel tok så en kald kontrabass og kastet den på huleboeren. En høvding lempet en rev provoserende.
+    </p>
+</div>
+
+---
+class: cols two
+#inline-block
+
+.col[
+```css
+  span {
+    background: #FD5158;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+  }
+```
+]
+
+<div class="col">
+  <h2>Alv hacket foran en parkeringsautomat</h2>
+
+  <p>Planeten kom eller drakk. En sabeltannkatt syklet bygningen hardt på en
+    <span style="
+      background: #FD5158;
+      color: #fff;
+      padding: 10px;
+      margin: 10px;
+      width: 100px;
+      height: 100px;">svart medisinball. En kjempefjott importerte lydmodulen</span>
+      til pøbelene. Skiene ankom, mens cowboyene filosoferte på slipemaskinen. Den blåe manualen traff medisinballene med en snekker som spillte ved en sort fiskebåt. En dvergpuddel tok så en kald kontrabass og kastet den på huleboeren. En høvding lempet en rev provoserende.
+    </p>
+</div>
+
+---
+class: cols two
+#inline-block
+
+.col[
+```css
+  span {
+    display: inline-block;
+    background: #FD5158;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+  }
+```
+]
+
+<div class="col">
+  <h2>Alv hacket foran en parkeringsautomat</h2>
+
+  <p>Planeten kom eller drakk. En sabeltannkatt syklet bygningen hardt på en
+    <span style="
+      display: inline-block;
+      background: #FD5158;
+      color: #fff;
+      padding: 10px;
+      margin: 10px;">svart medisinball. En kjempefjott importerte lydmodulen</span>
+      til pøbelene. Skiene ankom, mens cowboyene filosoferte på slipemaskinen. Den blåe manualen traff medisinballene med en snekker som spillte ved en sort fiskebåt. En dvergpuddel tok så en kald kontrabass og kastet den på huleboeren. En høvding lempet en rev provoserende.
+    </p>
+</div>
+
+???
+Tar opp maks plass før den brekker til ny linje
+
+---
+class: cols two
+#inline-block
+
+.col[
+```css
+  span {
+    display: inline-block;
+    background: #FD5158;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 100px;
+  }
+```
+]
+
+<div class="col">
+  <h2>Alv hacket foran en parkeringsautomat</h2>
+
+  <p>Planeten kom eller drakk. En sabeltannkatt syklet bygningen hardt på en
+    <span style="
+      display: inline-block;
+      background: #FD5158;
+      color: #fff;
+      padding: 10px;
+      margin:10px;
+      width: 200px;
+      height: 100px;
+    ">svart medisinball. En kjempefjott importerte lydmodulen</span>
+    til pøbelene. Skiene ankom, mens cowboyene filosoferte på slipemaskinen. Den blåe manualen traff medisinballene med en snekker som spillte ved en sort fiskebåt. En dvergpuddel tok så en kald kontrabass og kastet den på huleboeren. En høvding lempet en rev provoserende.
+  </p>
+</div>
+
+---
+
+class: cols two
+#inline-block
+
+.col[
+```css
+  span {
+    display: inline-block;
+    background: #FD5158;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 100px;
+  }
+```
+]
+
+<div class="col">
+  <h2>Alv hacket foran en parkeringsautomat</h2>
+
+  <p>Planeten kom eller drakk. En sabeltannkatt syklet bygningen hardt på en svart medisinball. En kjempefjott
+    <span style="
+      display: inline-block;
+      background: #FD5158;
+      color: #fff;
+      padding: 10px;
+      margin:10px;
+      width: 200px;
+      height: 100px;
+    ">importerte lydmodulen</span>
+    til pøbelene. Skiene ankom, mens cowboyene filosoferte på slipemaskinen. Den blåe manualen traff medisinballene med en snekker som spillte ved en sort fiskebåt. En dvergpuddel tok så en kald kontrabass og kastet den på huleboeren. En høvding lempet en rev provoserende.
+  </p>
+</div>
+
+---
+class: cols three
+#inline-block
+
+
+.col[
+```css
+  div {
+    display: inline-block;
+    vertical-align: top;
+  }
+```
+]
+<div class="col col-span-two">
+  <div class="inline-example">
+    <div style="height: 100px; vertical-align: top;">Boks</div>
+    <div style="height: 250px; vertical-align: top;">Boks</div>
+    <div style="height: 50px; vertical-align: top;">Boks</div>
+    <div style="height: 150px; vertical-align: top;">Boks</div>
+    <div style="height: 100px; vertical-align: top;">Boks</div>
+  </div>
+</div>
+
+---
+class: cols three
+#inline-block
+
+
+.col[
+```css
+  div {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+```
+]
+<div class="col col-span-two">
+  <div class="inline-example">
+    <div style="height: 100px; vertical-align: bottom;">Boks</div>
+    <div style="height: 250px; vertical-align: bottom;">Boks</div>
+    <div style="height: 50px; vertical-align: bottom;">Boks</div>
+    <div style="height: 150px; vertical-align: bottom;">Boks</div>
+    <div style="height: 100px; vertical-align: bottom;">Boks</div>
+  </div>
+</div>
+---
+
+class: cols three
+#inline-block
+
+
+.col[
+```css
+  div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+```
+]
+<div class="col col-span-two">
+  <div class="inline-example">
+    <div style="height: 100px; vertical-align: middle;">Boks</div>
+    <div style="height: 250px; vertical-align: middle;">Boks</div>
+    <div style="height: 50px; vertical-align: middle;">Boks</div>
+    <div style="height: 150px; vertical-align: middle;">Boks</div>
+    <div style="height: 100px; vertical-align: middle;">Boks</div>
+  </div>
+</div>
+---
+
+class: cols three
+#inline-block
+
+
+.col[
+```css
+  div {
+    display: inline-block;
+  }
+```
+  default vertical-align er baseline
+]
+<div class="col col-span-two">
+  <div class="inline-example">
+    <div style="height: 100px;">Boks</div>
+    <div style="height: 250px;">Boks</div>
+    <div style="height: 50px;">Boks</div>
+    <div style="height: 150px;">Boks</div>
+    <div style="height: 100px;">Boks</div>
+  </div>
+</div>
+
+---
+class: cols three
+#inline-block
+
+
+.col[
+```css
+  div {
+    display: inline-block;
+  }
+```
+  default vertical-align er baseline
+]
+<div class="col col-span-two">
+  <div class="inline-example">
+    <div style="height: 100px; font-size: 3em">Boks</div>
+    <div style="height: 250px; font-size: 1em">Boks</div>
+    <div style="height: 50px; font-size: 1.8em">Boks</div>
+    <div style="height: 150px; font-size: 0.8em">Boks</div>
+    <div style="height: 100px; font-size: 1.2em">Boks</div>
+  </div>
+</div>
+
+--
+<div class="horizontal-line" style="top: 166px;">
+
+---
+class: cols two
+#inline-block
+
+
+.col[
+```css
+  div {
+    display: inline-block;
+  }
+```
+
+```html
+  <div></div>
+  <div></div>
+  <div></div>
+```
+]
+<div class="col">
+  <div class="inline-example">
+    <div style=""></div>
+    <div style="background-color: #FFF9AE"></div>
+    <div style="background-color: #36BDB2"></div>
+  </div>
+</div>
+
+---
+class: cols two
+#inline-block
+
+
+.col[
+```css
+  div {
+    display: inline-block;
+  }
+```
+
+```html
+  <div></div><div></div><div></div>
+```
+]
+<div class="col">
+  <div class="inline-example">
+    <div></div><div style="background-color: #FFF9AE"></div><div style="background-color: #36BDB2"></div>
+  </div>
+</div>
+
+---
+
+
+class: cols two
+#inline-block
+
+
+.col[
+```css
+  div {
+    display: inline-block;
+  }
+```
+
+```html
+  <div></div><div></div>
+  <br>
+  <div></div>
+```
+]
+<div class="col">
+  <div class="inline-example">
+    <div></div><div style="background-color: #FFF9AE"></div>
+    <br>
+    <div style="background-color: #36BDB2"></div>
+  </div>
+</div>
+
+---
+class: center middle
+
+#Sentrering
+
+---
+class: cols two
+# inline (-block)
+
+.col[
+
+```html
+  <div class="parent">
+    <span>center me</span>
+  </div>
+```
+
+```css
+  .parent {
+    text-align: center;
+  }
+```
+]
+
+--
+<div class="col">
+  <div class="center-example" style="text-align:center">
+    <span>center me</span>
+  </div>
+--
+  <div class="center-example" style="text-align:center">
+    <span>center me</span>
+    <span>me too</span>
+  </div>
+</div>
+
+---
+class: cols two
+# block
+
+
+.col[
+```html
+  <div class="parent">
+    <div class="child">center me</div>
+  </div>
+```
+
+```css
+  .child {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+```
+]
+
+--
+
+<div class="col">
+  <div class="center-example">
+    <div class="child" style="margin: 0 auto; width:50%">center me</div>
+  </div>
+
+--
+
+  <div class="center-example">
+    <div class="child" style="margin: 0 auto 1rem auto; width:50%">center me</div>
+    <div class="child" style="margin: 0 auto; width:50%">me too</div>
+  </div>
+</div>
+
+
+---
+class: split
+#Oppgave 1
+
+* Midtstill `.container`
+* Begrens bredden på logoen til kun teksten
+
+##Nyttige ressurser
+* [CSS-triks, Display](https://css-tricks.com/almanac/properties/d/display/)
+* [CSS-triks, Centering in CSS](https://css-tricks.com/centering-css-complete-guide/)
+
+<iframe src="losningsforslag/oppgave1/index.html" style="height: 200%; width: 100%; transform: scale(0.5); transform-origin: top right;"></iframe>
+
+---
+class: middle center
+#Flexbox
+
+---
+class: cols two
+#Flexbox
+
+.col[
+```css
+  .parent {
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="display: block;">
+    <div class="box-a">A</div>
+    <div class="box-b">B</div>
+    <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox
+
+.col[
+```css
+  .parent {
+    display: flex;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example">
+    <div class="box-a">A</div>
+    <div class="box-b">B</div>
+    <div class="box-c">C</div>
+  </div>
+</div>
+---
+class: cols two
+#Flexbox - Justify-content
+
+.col[
+```css
+  .parent {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .box-a, .box-b, .box-c {
+    flex-grow: 1;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="justify-content: flex-start">
+    <div class="box-a" style="flex-grow: 1;">A</div>
+    <div class="box-b" style="flex-grow: 1;">B</div>
+    <div class="box-c" style="flex-grow: 1;">C</div>
+  </div>
+</div>
+---
+class: cols two
+#Flexbox - Justify-content
+
+.col[
+```css
+  .parent {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .box-a {
+    flex-grow: 0;
+  }
+  .box-b, .box-c {
+    flex-grow: 1;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="justify-content: flex-start;">
+    <div class="box-a" style="flex-grow: 0;">A</div>
+    <div class="box-b" style="flex-grow: 1;">B</div>
+    <div class="box-c" style="flex-grow: 1;">C</div>
+  </div>
+</div>
+---
+class: cols two
+#Flexbox - Justify-content
+
+.col[
+```css
+  .parent {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .box-a {
+    width: 250px;
+  }
+
+  .box-b, .box-c {
+    flex-grow: 1;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="justify-content: flex-start;">
+    <div class="box-a" style="width:250px;">A</div>
+    <div class="box-b" style="flex-grow: 1;">B</div>
+    <div class="box-c" style="flex-grow: 1;">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - Justify-content
+
+.col[
+```css
+  .parent {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .box-a {
+    width: 250px;
+  }
+
+  .box-b {
+    flex-grow: 1;
+  }
+
+  .box-c {
+    flex-grow: 10;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="justify-content: flex-start;">
+    <div class="box-a" style="width:250px;">A</div>
+    <div class="box-b" style="flex-grow: 1;">B</div>
+    <div class="box-c" style="flex-grow: 4;">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-direction
+
+.col[
+```css
+  .parent {
+    display: flex;
+  }
+
+  .box-a, .box-b, .box-c {
+    width: 100px;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example">
+    <div class="box-a" style="width: 100px;">A</div>
+    <div class="box-b" style="width: 100px;">B</div>
+    <div class="box-c" style="width: 100px;">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-direction
+
+.col[
+```css
+  .parent {
+    display: flex;
+    flex-direction: row; /* default */
+  }
+
+  .box-a, .box-b, .box-c {
+    width: 100px;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-direction: row;">
+    <div class="box-a" style="width: 100px;">A</div>
+    <div class="box-b" style="width: 100px;">B</div>
+    <div class="box-c" style="width: 100px;">C</div>
+  </div>
+</div>
+---
+class: cols two
+#Flexbox - flex-direction
+
+.col[
+```css
+  .parent {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .box-a, .box-b, .box-c {
+    width: 100px;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-direction: row-reverse;">
+    <div class="box-a" style="width: 100px;">A</div>
+    <div class="box-b" style="width: 100px;">B</div>
+    <div class="box-c" style="width: 100px;">C</div>
+  </div>
+</div>
+
+???
+fordi jeg har en fast bredde vil elementene legge seg mot høyre
+
+---
+class: cols two
+#Flexbox - flex-direction
+
+.col[
+```css
+  .parent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-a, .box-b, .box-c {
+    width: 100px;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-direction: column;">
+    <div class="box-a" style="width: 100px;">A</div>
+    <div class="box-b" style="width: 100px;">B</div>
+    <div class="box-c" style="width: 100px;">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-direction
+
+.col[
+```css
+  .parent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .box-a, .box-b, .box-c {
+    width: 100px;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-direction: column-reverse;">
+    <div class="box-a" style="width: 100px;">A</div>
+    <div class="box-b" style="width: 100px;">B</div>
+    <div class="box-c" style="width: 100px;">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-wrap
+
+.col[
+```css
+  .parent {
+    display: flex;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example">
+    <div class="box-a">A</div>
+    <div class="box-b">B</div>
+    <div class="box-c">C</div>
+    <div class="box-a">D</div>
+    <div class="box-b">E</div>
+    <div class="box-c">F</div>
+    <div class="box-a">G</div>
+    <div class="box-b">H</div>
+    <div class="box-c">I</div>
+    <div class="box-a">J</div>
+    <div class="box-b">K</div>
+    <div class="box-c">L</div>
+    <div class="box-a">M</div>
+    <div class="box-b">N</div>
+    <div class="box-c">O</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-wrap
+
+.col[
+```css
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-wrap: wrap;">
+    <div class="box-a">A</div>
+    <div class="box-b">B</div>
+    <div class="box-c">C</div>
+    <div class="box-a">D</div>
+    <div class="box-b">E</div>
+    <div class="box-c">F</div>
+    <div class="box-a">G</div>
+    <div class="box-b">H</div>
+    <div class="box-c">I</div>
+    <div class="box-a">J</div>
+    <div class="box-b">K</div>
+    <div class="box-c">L</div>
+    <div class="box-a">M</div>
+    <div class="box-b">N</div>
+    <div class="box-c">O</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-wrap
+
+.col[
+```css
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container .box {
+    width: 25%;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-wrap: wrap;">
+    <div class="box-a" style="width: 25%">A</div>
+    <div class="box-b" style="width: 25%">B</div>
+    <div class="box-c" style="width: 25%">C</div>
+    <div class="box-a" style="width: 25%">D</div>
+    <div class="box-b" style="width: 25%">E</div>
+    <div class="box-c" style="width: 25%">F</div>
+    <div class="box-a" style="width: 25%">G</div>
+    <div class="box-b" style="width: 25%">H</div>
+    <div class="box-c" style="width: 25%">I</div>
+    <div class="box-a" style="width: 25%">J</div>
+    <div class="box-b" style="width: 25%">K</div>
+    <div class="box-c" style="width: 25%">L</div>
+    <div class="box-a" style="width: 25%">M</div>
+    <div class="box-b" style="width: 25%">N</div>
+    <div class="box-c" style="width: 25%">O</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - align-items
+
+.col[
+```css
+  .parent {
+    display: flex;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example">
+    <div class="box-a" style="width: 100px">A<br>A<br>A<br>A<br>A</div>
+    <div class="box-b" style="width: 100px">B<br>B<br>B<br>B</div>
+    <div class="box-c" style="width: 100px">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - align-items
+
+.col[
+```css
+  .parent {
+    display: flex;
+    align-items: flex-start;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="align-items: flex-start;">
+    <div class="box-a" style="width: 100px">A<br>A<br>A<br>A<br>A</div>
+    <div class="box-b" style="width: 100px">B<br>B<br>B<br>B</div>
+    <div class="box-c" style="width: 100px">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - align-items
+
+.col[
+```css
+  .parent {
+    display: flex;
+    align-items: flex-end;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="align-items: flex-end;">
+    <div class="box-a" style="width: 100px">A<br>A<br>A<br>A<br>A</div>
+    <div class="box-b" style="width: 100px">B<br>B<br>B<br>B</div>
+    <div class="box-c" style="width: 100px">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - align-items
+
+.col[
+```css
+  .parent {
+    display: flex;
+    align-items: center;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="align-items: center;">
+    <div class="box-a" style="width: 100px">A<br>A<br>A<br>A<br>A</div>
+    <div class="box-b" style="width: 100px">B<br>B<br>B<br>B</div>
+    <div class="box-c" style="width: 100px">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - align-items
+
+.col[
+```css
+  .parent {
+    display: flex;
+    align-items: baseline;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="align-items: baseline;">
+    <div class="box-a" style="width: 100px">A<br>A<br>A<br>A<br>A</div>
+    <div class="box-b" style="width: 100px; font-size: 0.8em;">B<br>B<br>B<br>B</div>
+    <div class="box-c" style="width: 100px; font-size: 6em;">C</div>
+  </div>
+</div>
+
+--
+<div class="horizontal-line" style="top: 189px;">
+
+---
+class: center middle
+
+<h1 style="text-transform: lowercase">calc()</h1>
+
+
+---
+class: cols two
+
+<h1 style="text-transform: lowercase">calc()</h1>
+
+.col[
+```css
+  .boks-a {
+    width: 100%;
+  }
+```
+]
+<div class="col">
+  <div class="position-example">
+    <div class="box-a">A</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+<h1 style="text-transform: lowercase">calc()</h1>
+
+.col[
+```css
+  .boks-a {
+    width: 80%;
+  }
+```
+]
+<div class="col">
+  <div class="calc-example" style="justify-content: space-between">
+    <div class="box-a" style="width: 80%">A</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+<h1 style="text-transform: lowercase">calc()</h1>
+
+.col[
+```css
+  .boks-a {
+    width: 80%;
+  }
+
+  .boks-b {
+    width: 20%
+  }
+```
+]
+<div class="col">
+  <div class="calc-example" style="justify-content: space-between">
+    <div class="box-a" style="width: 80%">A</div>
+    <div class="box-b" style="width: 20%">B</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+<h1 style="text-transform: lowercase">calc()</h1>
+
+.col[
+```css
+  .boks-a {
+    width: 79.5%;
+  }
+
+  .boks-b {
+    width: 19.5%
+  }
+```
+]
+<div class="col">
+  <div class="calc-example" style="justify-content: space-between">
+    <div class="box-a" style="width: 79.5%">A</div>
+    <div class="box-b" style="width: 19.5%">B</div>
+  </div>
+  <em style="display:block;margin-top:1rem">1% mellom hver boks (~5px)</em>
+</div>
+
+---
+class: cols two
+
+<h1 style="text-transform: lowercase">calc()</h1>
+
+
+```css
+  .boks-a {
+    width: 79.5%;
+  }
+
+  .boks-b {
+    width: 19.5%
+  }
+```
+<div class="calc-example" style="justify-content: space-between">
+  <div class="box-a" style="width: 79.5%">A</div>
+  <div class="box-b" style="width: 19.5%">B</div>
+</div>
+<em style="display:block;margin-top:1rem">1% mellom hver boks (~10px)</em>
+
+---
+class: cols two
+
+<h1 style="text-transform: lowercase">calc()</h1>
+
+.col[
+```css
+  .boks-a {
+    width: calc(80% - 0.5rem);
+  }
+
+  .boks-b {
+    width: calc(20% - 0.5rem);
+  }
+```
+]
+<div class="col">
+  <div class="calc-example" style="justify-content: space-between">
+    <div class="box-a" style="width: calc(80% - 0.5rem)">A</div>
+    <div class="box-b" style="width: calc(20% - 0.5rem)">B</div>
+  </div>
+  <em style="display:block;margin-top:1rem">1 rem mellom hver boks (16px)</em>
+</div>
+
+---
+class: cols two
+
+<h1 style="text-transform: lowercase">calc()</h1>
+
+```css
+  .boks-a {
+    width: calc(80% - 0.5rem);
+  }
+
+  .boks-b {
+    width: calc(20% - 0.5rem);
+  }
+```
+
+<div class="calc-example" style="justify-content: space-between">
+  <div class="box-a" style="width: calc(80% - 0.5rem)">A</div>
+  <div class="box-b" style="width: calc(20% - 0.5rem)">B</div>
+</div>
+<em style="display:block;margin-top:1rem">1 rem mellom hver boks (16px)</em>
+
+---
+class: split
+#Oppgave 2
+
+* Implementer hoved- og sidespalten<br /> (⅔ og ⅓ spalte)
+* Implementer 2x2 bildegrid
+
+
+##Nyttige ressurser
+* [CSS-triks, A guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
+* [Learn CSS Layout, flexbox](http://learnlayout.com/flexbox.html)
+* [calc() - MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
+
+<iframe src="losningsforslag/oppgave2/index.html" style="height: 200%; width: 100%; transform: scale(0.5); transform-origin: top right;"></iframe>
+
+---
+class: center middle
+
+#Position
+
+---
+class: cols two
+
+#Static
+
+.col[
+```css
+  .box-b {
+    position: static;
+  }
+```
+]
+<div class="col">
+  <div class="position-example">
+      <div class="box-a">A</div>
+      <div class="box-b">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Relative
+
+.col[
+```css
+  .box-b {
+    position: relative;
+  }
+```
+]
+<div class="col">
+  <div class="position-example">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:relative">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Relative
+
+.col[
+```css
+  .box-b {
+    position: relative;
+    top: 20px;
+    left: 80px;
+  }
+```
+]
+<div class="col">
+  <div class="position-example">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:relative;left: 80px;top: 20px;">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .box-b {
+    position: absolute;
+  }
+```
+]
+<div class="col">
+  <div class="position-example">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .box-b {
+    position: absolute;
+    width: 100px;
+  }
+```
+]
+<div class="col">
+  <div class="position-example">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;width:100px;">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .box-b {
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 0;
+  }
+```
+]
+<div class="col">
+  <div class="position-example">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;width:100px;right: 0;top: 0;">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .parent {
+    position: relative;
+  }
+
+  .box-b {
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 0;
+  }
+```
+]
+<div class="col">
+  <div class="position-example" style="position: relative;">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;width:100px;right: 0;top: 0;">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .parent {
+    position: relative;
+  }
+
+  .box-b, .box-c {
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 0;
+  }
+```
+]
+<div class="col">
+  <div class="position-example" style="position: relative;">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;width:100px;right: 0;top: 0;">B</div>
+      <div class="box-c" style="position:absolute;width:100px;right: 60px;top: 0;">C</div>
+  </div>
+</div>
+
+???
+c ligger over b fordi den ligger sist i domen
+
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .parent {
+    position: relative;
+  }
+
+  .box-b, .box-c {
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 0;
+  }
+
+  .box-b {
+    z-index: 1;
+  }
+
+  .box-c {
+    z-index: 2;
+  }
+```
+]
+<div class="col">
+  <div class="position-example" style="position: relative;">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;width:100px;right: 0;top: 0;z-index: 2;">B</div>
+      <div class="box-c" style="position:absolute;width:100px;right: 60px;top: 0;z-index: 1;">C</div>
+  </div>
+</div>
+---
+class: cols two
+
+#Fixed
+
+.col[
+```css
+  .parent {
+    height: 550px;
+    overflow: auto;
+  }
+
+  header {
+    position: fixed;
+    z-index: 2;
+  }
+```
+]
+<div class="col">
+  <div class="position-example" style="height: 500px; overflow: auto;">
+    <heading class="box-a" style="width: auto;position:fixed;z-index:2;">Heading</heading>
+    <h2>Juledvergen luktet en sykkel</h2>
+    <p>Det var en gang noen kaniner som klemte andre indianerer. En astronaut tok med seg femten båter inn til mafiabossen. Den fryktete gitaren traff båtene med ei ugle som jobbet bak en rask lydmodul. </p>
+    <h2>Politiker mistet</h2>
+    <p>En figur bar orken treffsikkert. Presten var rettferdig og hurtig. Plutselig så de sytten politikerer som kom ved ringpermen. Sabeltannhundene klappet mange rytterer. </p>
+    <h2>Gorilla løftet</h2>
+    <p>35 ørner bukket en kjent biff på fjorten dager. En kjempefjott spiste flygemaskinen til tyranosaurusene. De så en kamerat som hoppet hensynsløst på en slipemaskin. Da importerte neandertaleren en kreps elegant. 76 kroner måtte en sabeltanngiraff betale. </p>
+    <h2>Robot traff</h2>
+    <p>Flere sjefer tegnet da en ork som lurte en elefant bar en politiker litt bak kretsen. De små pyromanene brølte i skjul. Knappene ankom, mens vennene jobbet over stokken. Plutselig så de to neandertalerer som kom foran osten. Flere sabeltannkatter brølte da en dverg som flamberte en doktor malte en sebra over fiskebåten. En rytter kjøpte seg en varm brannbil. </p>
+    <h2>Rev kjørte på en kabel</h2>
+    <p>En kanin malte noen ingeniører hensynsløst. Fire svart matte neandertalerer møtte 44 hodeløse dvergpuddeler. En venn var fantastisk og dro en mørk neandertaler. Orken var lysegrønn og sleip. Da løftet bergenseren skuespilleren fort. Femten kroner måtte en ungdom betale. Noen bueskyttere lurte en bil. Sjefen tok så en svart stokk og kastet den på en annen alv. De små asiaterene komuniserte i skjul. Den likbleke propellen traff serverene med geita som fisket langt foran en lemlestet monitor. </p>
+  </div>
+</div>
+
+--
+
+<div style="
+  z-index:2;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,.45);
+">
+
+<div style="
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top: -154px;
+  margin-left: -148px;
+  background:#fff;
+  padding:20px 40px;
+">
+  <img src="resources/css-awesome.png" style="height: 300px" />
+</div>
+</div>
+
+---
+class: split
+#Oppgave 3
+
+Legg bildeteksten over bildet
+
+##Nyttige ressurser
+* [CSS-triks, Position](https://css-tricks.com/almanac/properties/p/position/)
+* [CSS-triks, Absolute Positioning Inside Relative Positioning](https://css-tricks.com/absolute-positioning-inside-relative-positioning/)
+* [Learn CSS Layout, position](http://learnlayout.com/position.html)
+
+<iframe src="losningsforslag/oppgave3/index.html" style="height: 200%; width: 100%; transform: scale(0.5); transform-origin: top right;"></iframe>
+
+---
+
+class: center middle
+#Responsive design
+
+---
+class: fullscreen
+![](resources/this-is-the-web.png)
+
+.source[http://bradfrost.com]
+
+---
+class: fullscreen
+![](resources/this-will-be-the-web.png)
+
+.source[http://bradfrost.com]
+
+---
+class: center middle
+![](resources/finn-statistikk.png)
+
+.source[http://hjemmehos.finn.no/no/webfolk_+_entusiaster]
+
+---
+#Adaptive layout
+<img src="resources/adaptive-example1.png" style="width: 100%;" />
+.source[https://www.gjensidige.no]
+
+???
+Har alle sett Gjensidige.no?
+---
+#Adaptive layout
+<img src="resources/adaptive-example2.png" style="width: 100%;" />
+.source[https://www.gjensidige.no]
+
+---
+#Adaptive layout
+<img src="resources/adaptive-example3.png" style="width: 100%;" />
+.source[https://www.gjensidige.no]
+
+---
+class: cols three
+
+#Adaptive layout
+
+.col.col-span-two[
+```html
+  <div class="module">
+    <h2>Sjekk pris på forsikringene våre</h2>
+    <p>
+      På kun et par minutter får du et uforpliktende tilbud,
+      som inkluderer både nettrabatt og alle
+      organisasjonsrabattene.
+    </p>
+    <form action="GET">
+      <label>Velg forsikring</label>
+      <select class="form-control">
+        <option value="bil">Bilforsikring</option>
+        <option value="hus">Husforsikring</option>
+        <option value="innbo">Innboforsikring</option>
+        <option value="reise">Reiseforsikring</option>
+        <option value="mc">MC-forsikring</option>
+      </select>
+      <button type="submit">Sjekk pris og kjøp</button>
+    </form>
+  </div>
+```
+]
+.col[
+```css
+  .module {
+    padding: 10%;
+  }
+  .module p {
+    max-width: 400px;
+  }
+
+  .module form {
+    width: 50%;
+    max-width: 250px;
+  }
+```
+]
+
+---
+<div class="browser">
+  <div class="title">
+    delegate
+  </div>
+  <div class="url">https://www.npmjs.com/package/delegate</div>
+  <div class="content">
+    <img src="resources/mediaqueri.es.png" style="width:100%" />
+  </div>
+</div>
+
+.source[http://mediaqueri.es/]
+
+???
+blir også omtalt som breakpoints
+---
+
+#Media Queries
+```css
+  @media statement { ... }
+```
+--
+##AND operator
+```css
+  @media tv and (min-width: 700px) and (orientation: landscape) { ...  }
+```
+--
+##OR (,) operator
+```css
+  @media (min-width: 700px), handheld and (orientation: landscape) { ... }
+```
+--
+##NOT operator
+```css
+  @media not all and (monochrome) { ... }
+```
+
+.source[https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries]
+
+---
+#Media Queries
+
+```css
+  .long-list-with-things {
+    padding: 10%;
+  }
+
+  @media (max-width: 480px) {
+    .long-list-with-things {
+      padding: 2%;
+    }
+  }
+```
+
+---
+class: cols three
+#Desktop first
+
+
+.col[
+```css
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul li {
+    width: 25%;
+  }
+
+  @media (max-width:800px) {
+    ul li {
+      width: 50%;
+    }
+  }
+
+  @media (max-width:480px) {
+    ul {
+      display: block;
+    }
+
+    ul li {
+      width: 100%;
+    }
+  }
+```
+]
+<div class="col col-span-two">
+  <img src="resources/responsive-example.png" style="width:100%">
+</div>
+
+.source[http://colly.com/]
+
+---
+class: cols three
+#Mobile first
+
+.col[
+```css
+  @media (min-width:480px) {
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ul li {
+      width: 50%;
+    }
+  }
+
+  @media (min-width:1024px) {
+    ul li {
+      width: 25%;
+    }
+  }
+```
+]
+<div class="col col-span-two">
+  <img src="resources/responsive-example.png" style="width:100%">
+</div>
+
+.source[http://colly.com/]
+
+---
+class: split
+#Oppgave 4
+
+* Brekk `aside` under `section` for mindre enn 800px
+* Endre bildegrid til en liste for mindre enn 380px
+
+<iframe src="losningsforslag/oppgave4/index.html" style="height: 200%; width: 30%; right: 36%; transform: scale(0.5); transform-origin: top right;"></iframe>
+<iframe src="losningsforslag/oppgave4/index.html" style="height: 200%; width: 66%; transform: scale(0.5); transform-origin: top right;"></iframe>
+
+---
+<div class="browser">
+  <div class="title">Learn CSS Layout</div>
+  <div class="url">http://learnlayout.com/</div>
+  <iframe src="http://learnlayout.com/"></iframe>
+</div>
+
+.source[http://learnlayout.com]
+
+---
+
+<div class="browser">
+  <div class="title">An Introduction to the CSS Grid Layout Module — SitePoint</div>
+  <div class="url">https://www.sitepoint.com/introduction-css-grid-layout-module//</div>
+  <iframe src="https://www.sitepoint.com/introduction-css-grid-layout-module//"></iframe>
+</div>
+
+.source[https://www.sitepoint.com/introduction-css-grid-layout-module/]
+---
+
+<div class="browser">
+  <div class="title">Grid Garden - A game for learning CSS grid</div>
+  <div class="url">http://cssgridgarden.com/</div>
+  <iframe src="http://cssgridgarden.com/"></iframe>
+</div>
+
+.source[http://cssgridgarden.com]
+-->
+    <script src="https://cdn.rawgit.com/bekk/remark/a6d92707/vendor/remark.min.js" type="text/javascript"></script>
+    <script src="https://cdn.rawgit.com/zenorocha/delegate/a7464378/dist/delegate.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

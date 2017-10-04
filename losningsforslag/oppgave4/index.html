@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 4 - form elementer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="text-input"/>
+      </div>
+
+      <div class="form-group">
+        <label for="number">Favorite number</label>
+        <select id="number" class="dropdown">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">69</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Choose gender</legend>
+        <input type="radio" id="gender-male" class="radio" name="gender" />
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" class="radio" name="gender" checked />
+        <label for="gender-female">Female</label>
+        <input type="radio" id="gender-none" class="radio" name="gender" />
+        <label for="gender-none">none of the above</label>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Interested in</legend>
+        <input type="checkbox" id="interested-male" class="checkbox" name="gender" />
+        <label for="interested-male">Male</label>
+        <input type="checkbox" id="interested-female" class="checkbox" name="gender" checked />
+        <label for="interested-female">Female</label>
+        <input type="checkbox" id="interested-none" class="checkbox" name="gender" />
+        <label for="interested-none">none of the above</label>
+      </fieldset>
+    </form>
+  </body>
+</html>

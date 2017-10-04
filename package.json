@@ -1,0 +1,12 @@
+{
+  "name": "css-byggeklosser",
+  "version": "1.0.0",
+  "description": "Workshop i frontendprogrammet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kentandersen/css-byggeklosser"
+  },
+  "author": "BEKK Frontend",
+  "license": "MIT",
+  "dependencies": {}
+}
