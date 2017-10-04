@@ -17,7 +17,11 @@ function setLine(value, line) {
 
 function setTargetStyling(value, prop, target) {
   if(target) {
-    target.style[prop] = value;
+    if(target.forEach) {
+      target.forEach(el => el.style[prop] = value);      
+    } else {
+      target.style[prop] = value;
+    }
   }
 }
 
@@ -44,6 +48,6 @@ delegate(document.body, '.example-property-edit select', 'change', ({delegateTar
 
   if(line) {
     setLine(value, line);
-    setTargetStyling(value, prop, content.querySelector(targetSelector));
+    setTargetStyling(value, prop, content.querySelectorAll(targetSelector));
   }
 }, false)

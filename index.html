@@ -760,7 +760,7 @@ class: center middle
 
 ---
 class: cols two
-#Knapper
+#Default styling
 
 .col[
 ```css
@@ -821,7 +821,7 @@ button {
   background-color: #FD5158;
 }
 
-button:focus {
+button:hover {
   background-color: #36BDB2;
 }
 ```
@@ -841,7 +841,7 @@ button {
   background-color: #FD5158;
 }
 
-button:focus {
+button:hover {
   background-color: #36BDB2;
 }
 
@@ -873,6 +873,184 @@ class: center middle
 #Form elementer
 
 ---
+class: cols two
+#Input-felter
+
+.col[
+```css
+.text-input {
+  color: initial;
+  background-color: white;
+  border: 2px inset initial;
+  padding: 1px;
+  font-size: 11px;
+}
+```
+
+<div class="example-property-edit" data-target-selector=".col input">
+  <select data-prop="color">
+    <option selected>initial</option>
+    <option>pink</option>
+    <option>#1A1A1A</option>
+    <option>#fff</option>
+  </select>
+  <select data-prop="background-color">
+    <option selected>white</option>
+    <option>pink</option>
+    <option>#FD5158</option>
+    <option>#36BDB2</option>
+    <option>#FFF9AE</option>
+  </select>
+  <select data-prop="border">
+    <option selected>2px inset initial</option>
+    <option>0</option>
+    <option>1px dashed pink</option>
+  </select>
+  <select data-prop="padding">
+    <option selected>1px</option>
+    <option>0.5em 1em</option>
+    <option>0.5rem 1rem</option>
+  </select>
+  <select data-prop="font-size">
+    <option selected>11px</option>
+    <option>1rem</option>
+    <option>3rem</option>
+    <option>6rem</option>
+  </select>
+</div>
+]
+
+<div class="col" style="text-align:center">
+  <input style="transform:scale(2); transform-origin:top" value="text text text" onkeypress="arguments[0].stopPropagation();"/>
+</div>
+
+---
+
+
+class: cols two
+#Form elementer
+
+.col[
+```css
+.checkbox, .radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  margin: 0;
+  width: auto;
+  height: auto;
+  vertical-align: baseline;
+  background-color: none;
+}
+```
+
+<div class="example-property-edit" data-target-selector=".col input">
+  <select data-prop="-webkit-appearance">
+    <option selected>default</option>
+    <option>none</option>
+  </select>
+  <select data-prop="-moz-appearance">
+    <option selected>default</option>
+    <option>none</option>
+  </select>
+  <select data-prop="appearance">
+    <option selected>default</option>
+    <option>none</option>
+  </select>
+  <select data-prop="border">
+    <option selected>none</option>
+    <option>0</option>
+    <option>1px dashed pink</option>
+    <option>0.125rem solid #808080</option>
+  </select>
+  <select data-prop="margin">
+    <option selected>0</option>
+    <option>1rem</option>
+    <option>2rem</option>
+  </select>
+  <select data-prop="width">
+    <option selected>auto</option>
+    <option>1rem</option>
+    <option>2rem</option>
+    <option>6rem</option>
+  </select>
+  <select data-prop="height">
+    <option selected>auto</option>
+    <option>1rem</option>
+    <option>2rem</option>
+    <option>6rem</option>
+  </select>
+  <select data-prop="vertical-align">
+    <option selected>baseline</option>
+    <option>top</option>
+    <option>bottom</option>
+    <option>middle</option>
+  </select>
+  <select data-prop="background-color">
+    <option selected>none</option>
+    <option>#FFF</option>
+    <option>#FD5158</option>
+    <option>#36BDB2</option>
+    <option>#FFF9AE</option>
+    <option>pink</option>
+  </select>
+</div>
+]
+
+<div class="col">
+  <div style="transform:scale(2); transform-origin:top left;">
+    <input type="radio" id="dummy-radio-0" name="dummy-radio" />
+    <label for="dummy-radio-0">Choose one</label>
+    <br>
+    <input type="radio" id="dummy-radio-1" name="dummy-radio" />
+    <label for="dummy-radio-1">Choose two</label>
+    <br>
+    <br>
+    <input type="checkbox" id="dummy-checkbox-0" name="dummy-checkbox" />
+    <label for="dummy-checkbox-0">How about this?</label>
+    <br>
+    <input type="checkbox" id="dummy-checkbox-1" name="dummy-checkbox" />
+    <label for="dummy-checkbox-1">Or that?</label>
+  </div>
+</div>
+
+---
+
+class: cols two
+#Form elementer
+
+.col[
+```css
+.checkbox, .radio {
+  background-color: #FFF;
+}
+
+.checkbox:checked, .radio:checked {
+  background-color: #36BDB2;
+}
+```
+]
+
+<div class="col">
+  <div style="transform:scale(2); transform-origin:top left;">
+    <input type="radio" id="dummy-radio-0" class="example-radio" name="dummy-radio" />
+    <label for="dummy-radio-0">Choose one</label>
+    <br>
+    <input type="radio" id="dummy-radio-1" class="example-radio" name="dummy-radio" />
+    <label for="dummy-radio-1">Choose two</label>
+    <br>
+    <br>
+    <input type="checkbox" id="dummy-checkbox-0" class="example-checkbox" name="dummy-checkbox" />
+    <label for="dummy-checkbox-0">How about this?</label>
+    <br>
+    <input type="checkbox" id="dummy-checkbox-1" class="example-checkbox" name="dummy-checkbox" />
+    <label for="dummy-checkbox-1">Or that?</label>
+  </div>
+</div>
+---
+
+
 
 
 class: split

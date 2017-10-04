@@ -227,3 +227,24 @@
   width: 100%;
   opacity: 0;
 }
+
+.example-radio,
+.example-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+}
+
+.example-radio:checked,
+.example-checkbox:checked {
+  background-color: #36BDB2;
+}
+
+.example-radio:focus,
+.example-checkbox:focus {
+  outline: none;
+}
