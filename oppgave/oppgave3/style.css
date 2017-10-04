@@ -1,0 +1,25 @@
+html {
+  font-size: 16px;
+  font-family: 'Helvetica';
+}
+
+.group {
+  margin-bottom: 2rem;
+}
+
+/*
+
+btn har tekststørrelse på 1rem og padding på 0.5rem 1rem
+btn--small har tekststørrelse på 0.8rem og padding på 0.25rem 0.5rem
+btn--large har tekststørrelse på 1.5rem og padding på 0.75rem 1.5rem
+
+btn active-effekt box-shadow: inset 0 0 0.75rem rgba(0,0,0,0.5)
+
+active effekt box-shadow: inset 0 0 0.75rem rgba(0,0,0,0.5)
+
+primary bakgrunnsfarge #0275d8, hover #286090
+secondary bakgrunnsfarge #efeded, hover #ccc, tekstfarge #373a3c
+success bakgrunnsfarge #5cb85c, hover #449d44'
+warning bakgrunnsfarge #f0ad4e, hover #ec971f'
+danger bakgrunnsfarge #d9534f, hover #c9302c;
+*/

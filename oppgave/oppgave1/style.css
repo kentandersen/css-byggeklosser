@@ -1,0 +1,16 @@
+html {
+  font-size: 18px;
+  font-family: 'Helvetica';
+}
+
+/*
+  h1, h2, h3 margin på 1.5rem - 0.75rem (top - bunn);
+  h1, h2, h3 margin på 0.75rem - 0.75rem (top - bunn);
+
+  h1 font-size på 2.5rem
+  h2 font-size på 2rem
+  h3 font-size på 1.5rem
+  h4 font-size på 1.125rem
+  h5 font-size på 0.875rem
+  h6 font-size på 0.75rem
+*/
