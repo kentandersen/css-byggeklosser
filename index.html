@@ -174,9 +174,14 @@ class: cols two
 ---
 class: split
 #Oppgave 1
+Implementer et ryddig overskrifthierarki `H1` - `H6`
 
 
-##Nyttige ressurser
+##Nyttige ressurs
+[Working with Typography - Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/working-with-typography/)
+
+
+
 
 <iframe src="losningsforslag/oppgave1/index.html" style="width: 50%; background:#fff"></iframe>
 
@@ -749,9 +754,16 @@ class: cols two
 class: split
 #Oppgave 2
 
-##ikoner
+Implementer en baseklasse for ikoner (`.icon`) og fire modifier klasser hvert ikon, i tre størrelser.
+
 
 ##Nyttige ressurser
+
+* [Naming - BEM](http://getbem.com/naming/)
+* [More transparent ui code with namespaces - CSSwizardry](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
+
+
+
 
 <iframe src="losningsforslag/oppgave2/index.html" style="width: 50%; background:#fff"></iframe>
 
@@ -863,9 +875,12 @@ button:active {
 class: split
 #Oppgave 3
 
-##Knapper
+Implementer en baseklasse for knapper (`.btn`) og fem modifier klasser for farge, hver i tre størrelser.`
 
 ##Nyttige ressurser
+* [Pseudo-classes - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+* [EMs - font-size - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#Ems)
+
 
 <iframe src="losningsforslag/oppgave3/index.html" style="width: 50%; background:#fff"></iframe>
 
@@ -934,9 +949,9 @@ class: cols two
 .col[
 ```css
 .checkbox, .radio {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: default;
+  -moz-appearance: default;
+  appearance: default;
   border: none;
   margin: 0;
   width: auto;
@@ -1051,15 +1066,109 @@ class: cols two
 </div>
 ---
 
+class: cols two
+#Select
+
+.col[
+```css
+.dropdown {
+  -webkit-appearance: default;
+  -moz-appearance: default;
+  appearance: default;
+  border: none;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  vertical-align: baseline;
+  background-color: none;
+}
+  ```
+
+<div class="example-property-edit" data-target-selector=".col.result select">
+  <select data-prop="-webkit-appearance">
+    <option selected>default</option>
+    <option>none</option>
+  </select>
+  <select data-prop="-moz-appearance">
+    <option selected>default</option>
+    <option>none</option>
+  </select>
+  <select data-prop="appearance">
+    <option selected>default</option>
+    <option>none</option>
+  </select>
+  <select data-prop="border">
+    <option selected>none</option>
+    <option>0</option>
+    <option>1px dashed pink</option>
+    <option>0.125rem solid #808080</option>
+  </select>
+  <select data-prop="border-radius">
+    <option selected>5px</option>
+    <option>0</option>
+    <option>1rem</option>
+    <option>2rem</option>
+  </select>
+  <select data-prop="margin">
+    <option selected>0</option>
+    <option>1rem</option>
+    <option>2rem</option>
+  </select>
+  <select data-prop="padding">
+    <option selected>0</option>
+    <option>1rem</option>
+    <option>2rem</option>
+  </select>
+  <select data-prop="width">
+    <option selected>auto</option>
+    <option>1rem</option>
+    <option>2rem</option>
+    <option>6rem</option>
+  </select>
+  <select data-prop="height">
+    <option selected>auto</option>
+    <option>1rem</option>
+    <option>2rem</option>
+    <option>6rem</option>
+  </select>
+  <select data-prop="vertical-align">
+    <option selected>baseline</option>
+    <option>top</option>
+    <option>bottom</option>
+    <option>middle</option>
+  </select>
+  <select data-prop="background-color">
+    <option selected>none</option>
+    <option>#FFF</option>
+    <option>#FD5158</option>
+    <option>#36BDB2</option>
+    <option>#FFF9AE</option>
+    <option>pink</option>
+  </select>
+</div>
+]
+
+<div class="col result">
+  <select id="number" class="dropdown" style="transform:scale(2); transform-origin:top left;">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">69</option>
+  </select>
+</div>
 
 
-
+---
 class: split
 #Oppgave 4
 
-##Form
+Implementer eget utseende for `.text-input` `.dropdown` `.radio` og `.checkbox`
 
 ##Nyttige ressurser
+* [appearance - CSS tricks](https://css-tricks.com/almanac/properties/a/appearance/)
+* [-moz-appearance - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-appearance)
 
 <iframe src="losningsforslag/oppgave4/index.html" style="width: 50%; background:#fff"></iframe>
 
